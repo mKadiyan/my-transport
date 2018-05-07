@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>My Transport</title>
+
+    <div th:replace="fragments/header :: header-css"/>
+    <!--<link rel="icon" th:href="@{/images/brand.png}">-->
+</head>
+<body>
+
+<div th:replace="fragments/header :: header"/>
+
+<div class="container">
+    <div class="row inquiry-section">
+        <div class="offset-md-2 col-md-8">
+            <form>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" aria-describedby="namehelp"
+                               placeholder="Enter name">
+                        <small id="nameHelp" class="form-text text-muted">Enter your name</small>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="mobileNumber">Mobile Number</label>
+                        <input type="number" class="form-control" id="mobileNumber" aria-describedby="mobileNumberHelp"
+                               placeholder="Mobile number">
+                        <small id="mobileNumberHelp" class="form-text text-muted">Mobile number</small>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="pickUpLocation">Pickup Location</label>
+                        <textarea class="form-control" id="pickUpLocation" rows="3" aria-describedby="pickUpLocationHelp" placeholder="Pickup location"></textarea>
+                        <small id="pickUpLocationHelp" class="form-text text-muted">Enter pickup location</small>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="destination">Destination</label>
+                        <textarea class="form-control" id="destination" rows="3" aria-describedby="destinationHelp" placeholder="Destination"></textarea>
+                        <small id="destinationHelp" class="form-text text-muted">Enter destination</small>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                        <label for="materialType">Material type</label>
+                        <input type="text" class="form-control" id="materialType" aria-describedby="materialTypeHelp"
+                               placeholder="Material type">
+                        <small id="materialTypeHelp" class="form-text text-muted">Material type</small>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                        <label for="bookerAddress">Booker address</label>
+                        <textarea class="form-control" id="bookerAddress" rows="3" aria-describedby="bookerAddressHelp"
+                                  placeholder="Enter your address"></textarea>
+                        <small id="bookerAddressHelp" class="form-text text-muted">Booker Address</small>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!--<div class="starter-template">-->
+    <!--<h1>Spring Boot Web Thymeleaf + Spring Security</h1>-->
+    <!--<h2>1. Visit <a th:href="@{/admin}">Admin page (Spring Security protected, Need Admin Role)</a></h2>-->
+    <!--<h2>2. Visit <a th:href="@{/user}">User page (Spring Security protected, Need User Role)</a></h2>-->
+    <!--<h2>3. Visit <a th:href="@{/about}">Normal page</a></h2>-->
+    <!--</div>-->
+
+</div>
+<!-- /.container -->
+
+<div th:replace="fragments/footer :: footer"/>
+
+</body>
+</html>
