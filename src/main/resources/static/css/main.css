@@ -8,6 +8,8 @@ h2{
 
 footer{
 	background-color: #e3f2fd;
+	min-height: 100px;
+	text-align: center;
 }
 
 .navbar{
@@ -15,4 +17,10 @@ footer{
 }
 .inquiry-section{
 	margin: 20px 0;
+}
+.container{
+	min-height: 300px;
+}
+.thankyou{
+	text-align: center;
 }

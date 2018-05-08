@@ -21,6 +21,11 @@ public class DefaultController {
         return "/admin";
     }
 
+    @GetMapping("/inquiries")
+    public String inquiries() {
+        return "/inquiries";
+    }
+
     @GetMapping("/user")
     public String user() {
         return "/user";
@@ -29,6 +34,11 @@ public class DefaultController {
     @GetMapping("/about")
     public String about() {
         return "/about";
+    }
+
+    @GetMapping("/thankyou")
+    public String thankyou() {
+        return "/thankyou";
     }
 
     @GetMapping("/login")
