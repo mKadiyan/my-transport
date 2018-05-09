@@ -11,15 +11,42 @@
 <div th:replace="fragments/header :: header"/>
 
 <div class="container">
-    <div class="row inquiries">
-     <h1>All Inquiries</h1>
+    <h1>All Inquiries</h1>
+    <div class="inquiry row border border-primary" th:each="inquiry : ${inquiries}">
+        <div class="col-md-6">
+            <label for="name">Name</label>
+            <input type="text" id="name" disabled th:value="${inquiry.name}">
+        </div>
+        <div class="col-md-6">
+            <label for="mobileNumber">Mobile Number</label>
+            <input type="text" id="mobileNumber" disabled th:value="${inquiry.mobileNumber}">
+        </div>
+        <div class="col-md-6">
+            <label for="pickupLocation">Pickup Location</label>
+            <input type="text" id="pickupLocation" disabled th:value="${inquiry.pickupLocation}">
+        </div>
+        <div class="col-md-6">
+            <label for="dropLocation">Drop Location</label>
+            <input type="text" id="dropLocation" disabled th:value="${inquiry.dropLocation}">
+        </div>
+        <div class="col-md-6">
+            <label for="bookerAddress">Booker Address</label>
+            <input type="text" id="bookerAddress" disabled th:value="${inquiry.bookerAddress}">
+        </div>
+        <div class="col-md-6">
+            <label for="materialType">Material Type</label>
+            <input type="text" id="materialType" disabled th:value="${inquiry.materialType}">
+        </div>
+        <div class="col-md-6">
+            <label for="status">Status</label>
+            <input type="text" id="status" disabled th:value="${inquiry.status}">
+        </div>
+        <div class="col-md-6">
+            <label for="notes">Notes</label>
+            <input type="text" id="notes" disabled th:value="${inquiry.notes}">
+        </div>
+
     </div>
-    <!--<div class="starter-template">-->
-    <!--<h1>Spring Boot Web Thymeleaf + Spring Security</h1>-->
-    <!--<h2>1. Visit <a th:href="@{/admin}">Admin page (Spring Security protected, Need Admin Role)</a></h2>-->
-    <!--<h2>2. Visit <a th:href="@{/user}">User page (Spring Security protected, Need User Role)</a></h2>-->
-    <!--<h2>3. Visit <a th:href="@{/about}">Normal page</a></h2>-->
-    <!--</div>-->
 
 </div>
 <!-- /.container -->
