@@ -1,1 +1,0 @@
-web: java -jar -Dspring.profiles.active=prod target/my-transport-1.0.jar
