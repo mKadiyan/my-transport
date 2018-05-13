@@ -7,7 +7,13 @@ logging:
 ---
 spring:
     profiles: prod
+    datasource:
+      url: jdbc:postgresql://ec2-174-129-28-38.compute-1.amazonaws.com:5432/d5ns99ggj9ek62
+      username: uxzdkxyonalzfu
+      password: debc2a46652639b2f024a5ac63c3d99ddedee24bb744686a5f5a86df20a82ef2
+    jpa:
+      hibernate:
+        ddl-auto: update
 logging:
   level:
    root: debug
-
