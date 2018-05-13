@@ -1,0 +1,10 @@
+spring:
+  profiles: default
+logging:
+  level:
+   com.transport: debug
+
+---
+spring:
+    profiles: prod
+
