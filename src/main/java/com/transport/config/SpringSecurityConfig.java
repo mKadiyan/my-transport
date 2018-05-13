@@ -1,4 +1,4 @@
-package com.mkyong.config;
+package com.transport.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -27,7 +27,7 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 
         http.csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/", "/home", "/about","/thankyou","/inquiries").permitAll()
+                .antMatchers("/", "/home", "/about","/thankyou","/inquiry", "/inquiries").permitAll()
                 .antMatchers("/admin/**").hasAnyRole("ADMIN")
                 .anyRequest().authenticated()
                 .and()

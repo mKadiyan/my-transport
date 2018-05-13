@@ -1,4 +1,4 @@
-package com.mkyong.model;
+package com.transport.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

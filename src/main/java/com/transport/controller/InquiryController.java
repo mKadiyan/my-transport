@@ -1,29 +1,32 @@
-package com.mkyong.controller;
+package com.transport.controller;
 
-import com.mkyong.dao.InquiryRepository;
-import com.mkyong.model.Inquiry;
-import com.mkyong.model.PagerModel;
+import com.transport.dao.InquiryRepository;
+import com.transport.model.Inquiry;
+import com.transport.model.PagerModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Optional;
 
-@Controller
+@RestController
 public class InquiryController {
 
     private static final int BUTTONS_TO_SHOW = 3;
     private static final int INITIAL_PAGE = 0;
-    private static final int INITIAL_PAGE_SIZE = 5;
-    private static final int[] PAGE_SIZES = { 5, 10};
+    private static final int INITIAL_PAGE_SIZE = 10;
+    private static final int[] PAGE_SIZES = {10, 15};
 
     @Autowired
     private InquiryRepository inquiryRepository;
 
+    @PostMapping("/inquiry")
+    public ModelAndView createInquiry(@ModelAttribute(value="inquiry") Inquiry inquiry){
+        inquiryRepository.save(inquiry);
+        return new ModelAndView("redirect:/thankyou");
+    }
 
     @GetMapping("/inquiries")
     public ModelAndView getAllInquiries(@RequestParam("pageSize") Optional<Integer> pageSize,

@@ -1,4 +1,4 @@
-package com.mkyong.model;
+package com.transport.model;
 
 public class PagerModel {
 	private int buttonsToShow = 5;

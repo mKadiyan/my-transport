@@ -12,37 +12,37 @@
 <div class="container">
     <div class="row inquiry-section">
         <div class="offset-md-2 col-md-8">
-            <form>
+            <form action="#" th:action="@{/inquiry}" th:object="${inquiry}" method="post">
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
                         <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" aria-describedby="namehelp"
+                        <input type="text" class="form-control" th:field="*{name}" id="name" aria-describedby="namehelp"
                                placeholder="Enter name">
                         <small id="nameHelp" class="form-text text-muted">Enter your name</small>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="mobileNumber">Mobile Number</label>
-                        <input type="number" class="form-control" id="mobileNumber" aria-describedby="mobileNumberHelp"
+                        <input type="number" class="form-control" th:field="*{mobileNumber}" id="mobileNumber" aria-describedby="mobileNumberHelp"
                                placeholder="Mobile number">
                         <small id="mobileNumberHelp" class="form-text text-muted">Mobile number</small>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
-                        <label for="pickUpLocation">Pickup Location</label>
-                        <textarea class="form-control" id="pickUpLocation" rows="3" aria-describedby="pickUpLocationHelp" placeholder="Pickup location"></textarea>
+                        <label for="pickupLocation">Pickup Location</label>
+                        <textarea class="form-control" th:field="*{pickupLocation}" id="pickupLocation" rows="3" aria-describedby="pickUpLocationHelp" placeholder="Pickup location"></textarea>
                         <small id="pickUpLocationHelp" class="form-text text-muted">Enter pickup location</small>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="destination">Destination</label>
-                        <textarea class="form-control" id="destination" rows="3" aria-describedby="destinationHelp" placeholder="Destination"></textarea>
-                        <small id="destinationHelp" class="form-text text-muted">Enter destination</small>
+                        <label for="dropLocation">Drop Location</label>
+                        <textarea class="form-control" th:field="*{dropLocation}" id="dropLocation" rows="3" aria-describedby="destinationHelp" placeholder="Destination"></textarea>
+                        <small id="destinationHelp" class="form-text text-muted">Enter drop location</small>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col-md-12 mb-3">
                         <label for="materialType">Material type</label>
-                        <input type="text" class="form-control" id="materialType" aria-describedby="materialTypeHelp"
+                        <input type="text" class="form-control" th:field="*{materialType}" id="materialType" aria-describedby="materialTypeHelp"
                                placeholder="Material type">
                         <small id="materialTypeHelp" class="form-text text-muted">Material type</small>
                     </div>
@@ -50,7 +50,7 @@
                 <div class="form-row">
                     <div class="col-md-12 mb-3">
                         <label for="bookerAddress">Booker address</label>
-                        <textarea class="form-control" id="bookerAddress" rows="3" aria-describedby="bookerAddressHelp"
+                        <textarea class="form-control" th:field="*{bookerAddress}" id="bookerAddress" rows="3" aria-describedby="bookerAddressHelp"
                                   placeholder="Enter your address"></textarea>
                         <small id="bookerAddressHelp" class="form-text text-muted">Booker Address</small>
                     </div>

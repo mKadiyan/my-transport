@@ -1,6 +1,6 @@
-package com.mkyong.dao;
+package com.transport.dao;
 
-import com.mkyong.model.Inquiry;
+import com.transport.model.Inquiry;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 
