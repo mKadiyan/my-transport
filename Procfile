@@ -1,1 +1,1 @@
-web: java -jar -Dspring.profiles.active=prod target/my-transport-1.0.jar
+web: java -Dserver.port=$PORT -Dspring.profiles.active=prod $JAVA_OPTS -jar target/my-transport-1.0.jar
