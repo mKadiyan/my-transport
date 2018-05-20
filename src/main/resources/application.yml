@@ -1,6 +1,5 @@
 spring:
-  profiles:
-    active: prod
+  profiles: default
 logging:
   level:
    com.transport: debug
