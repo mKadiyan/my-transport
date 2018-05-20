@@ -65,7 +65,7 @@ public class InquiryController {
     }
 
     private void generateDummyEnquiries(){
-        for(int i=0;i<20;i++){
+        for(int i=0;i<5;i++){
             Inquiry inquiry = new Inquiry();
             inquiry.setId((long) i);
             inquiry.setName("Inquiry Name "+i);
