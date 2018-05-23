@@ -15,13 +15,13 @@
             <form action="#" th:action="@{/inquiry}" th:object="${inquiry}" method="post">
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
-                        <label for="name">Name</label>
+                        <label for="name">Name(आपका नाम?)</label>
                         <input type="text" class="form-control" th:field="*{name}" id="name" aria-describedby="namehelp"
                                placeholder="Enter name">
                         <small id="nameHelp" class="form-text text-muted">Enter your name</small>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="mobileNumber">Mobile Number</label>
+                        <label for="mobileNumber">Mobile Number(मोबाइल नंबर)</label>
                         <input type="number" class="form-control" th:field="*{mobileNumber}" id="mobileNumber" aria-describedby="mobileNumberHelp"
                                placeholder="Mobile number">
                         <small id="mobileNumberHelp" class="form-text text-muted">Mobile number</small>
@@ -29,19 +29,19 @@
                 </div>
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
-                        <label for="pickupLocation">Pickup Location</label>
+                        <label for="pickupLocation">Pickup Location(सामान कहाँ से लेना है ?)</label>
                         <textarea class="form-control" th:field="*{pickupLocation}" id="pickupLocation" rows="3" aria-describedby="pickUpLocationHelp" placeholder="Pickup location"></textarea>
                         <small id="pickUpLocationHelp" class="form-text text-muted">Enter pickup location</small>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="dropLocation">Drop Location</label>
+                        <label for="dropLocation">Drop Location(सामान किस पते पे पहुँचाना है?)</label>
                         <textarea class="form-control" th:field="*{dropLocation}" id="dropLocation" rows="3" aria-describedby="destinationHelp" placeholder="Destination"></textarea>
                         <small id="destinationHelp" class="form-text text-muted">Enter drop location</small>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col-md-12 mb-3">
-                        <label for="materialType">Material type</label>
+                        <label for="materialType">Material type(मटेरियल का प्रकार)</label>
                         <input type="text" class="form-control" th:field="*{materialType}" id="materialType" aria-describedby="materialTypeHelp"
                                placeholder="Material type">
                         <small id="materialTypeHelp" class="form-text text-muted">Material type</small>
@@ -49,10 +49,19 @@
                 </div>
                 <div class="form-row">
                     <div class="col-md-12 mb-3">
-                        <label for="bookerAddress">Booker address</label>
+                        <label for="bookerAddress">Booker address(आर्डर करने वाले का पता)</label>
                         <textarea class="form-control" th:field="*{bookerAddress}" id="bookerAddress" rows="3" aria-describedby="bookerAddressHelp"
                                   placeholder="Enter your address"></textarea>
                         <small id="bookerAddressHelp" class="form-text text-muted">Booker Address</small>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-12 mb-3 checkbox">
+                        <label for="insurance">Insurance(सामान का बिमा चाहिए?)
+                        <input th:type="checkbox" class="form-control" th:field="*{insurance}" id="insurance" aria-describedby="insuranceHelp"
+                                  placeholder="Insurance Required"></input>
+                        </label>
+                        <small id="insuranceHelp" class="form-text text-muted">Insurance</small>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>

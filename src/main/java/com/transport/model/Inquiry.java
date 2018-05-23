@@ -18,6 +18,7 @@ public class Inquiry {
     private String materialType;
     private Status status = Status.OPEN;
     private String notes;//for admin
+    private boolean insurance = false;
 
 
     public Long getId() {
@@ -90,6 +91,14 @@ public class Inquiry {
 
     public void setNotes(String notes) {
         this.notes = notes;
+    }
+
+    public boolean isInsurance() {
+        return insurance;
+    }
+
+    public void setInsurance(boolean insurance) {
+        this.insurance = insurance;
     }
 
     enum Status{
