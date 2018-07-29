@@ -6,6 +6,8 @@ h2{
 	color:#FF0000;
 }
 
+
+
 footer{
 	background-color: #6194fd;
 	min-height: 100px;
@@ -18,12 +20,10 @@ footer{
 .inquiry-section{
 	margin: 20px 0;
 }
-.container{
+.container-fluid{
 	min-height: 300px;
 	background-color: #ff665f;
-	margin-top: 0;
-	margin-bottom: 0;
-    padding: 15px;
+    padding: 15px 0;
 }
 .thankyou{
 	text-align: center;
@@ -42,15 +42,4 @@ footer{
     text-align: center;
     color: black;
 }
-/*.pagination-centered {*/
-	/*text-align: center;*/
-/*}*/
 
-/*.disabled {*/
-	/*pointer-events: none;*/
-	/*opacity: 0.5;*/
-/*}*/
-
-/*.pointer-disabled {*/
-	/*pointer-events: none;*/
-/*}*/

@@ -32,11 +32,11 @@ public class InquiryController {
     public ModelAndView getAllInquiries(@RequestParam("pageSize") Optional<Integer> pageSize,
                                  @RequestParam("page") Optional<Integer> page){
 
-//        if(inquiryRepository.count()!=0){
-//            ;//pass
-//        }else{
-//            generateDummyEnquiries();
-//        }
+        if(inquiryRepository.count()!=0){
+            ;//pass
+        }else{
+            generateDummyEnquiries();
+        }
 
         ModelAndView modelAndView = new ModelAndView("inquiries");
         //
@@ -65,7 +65,7 @@ public class InquiryController {
     }
 
     private void generateDummyEnquiries(){
-        for(int i=0;i<5;i++){
+        for(int i=0;i<15;i++){
             Inquiry inquiry = new Inquiry();
             inquiry.setId((long) i);
             inquiry.setName("Inquiry Name "+i);
