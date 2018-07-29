@@ -7,19 +7,23 @@ h2{
 }
 
 footer{
-	background-color: #e3f2fd;
+	background-color: #6194fd;
 	min-height: 100px;
 	text-align: center;
 }
 
 .navbar{
-	background-color: #e3f2fd;
+	background-color: #6194fd;
 }
 .inquiry-section{
 	margin: 20px 0;
 }
 .container{
 	min-height: 300px;
+	background-color: #ff665f;
+	margin-top: 0;
+	margin-bottom: 0;
+    padding: 15px;
 }
 .thankyou{
 	text-align: center;
