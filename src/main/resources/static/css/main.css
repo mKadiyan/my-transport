@@ -35,6 +35,13 @@ footer{
 	font-weight: bold;
 	text-decoration: underline;
 }
+.form-row label{
+    font-size: 1.2rem   ;
+}
+.inquiry-section .title h2{
+    text-align: center;
+    color: black;
+}
 /*.pagination-centered {*/
 	/*text-align: center;*/
 /*}*/
