@@ -7,39 +7,91 @@ h2{
 }
 
 
+@media (min-width: 400px) {
+    footer{
+        background-color: #6194fd;
+        min-height: 100px;
+        text-align: center;
+    }
 
-footer{
-	background-color: #6194fd;
-	min-height: 100px;
-	text-align: center;
+    .navbar{
+        background-color: #6194fd;
+    }
+    .inquiry-section{
+        margin: 20px 0;
+    }
+    .container-fluid{
+        min-height: 300px;
+        background-color: #ff665f;
+        padding: 15px 0;
+    }
+    .thankyou{
+        text-align: center;
+    }
+    .inquiry{
+        margin: 10px 0;
+    }
+    .label{
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    .form-row label{
+        font-size: 1.2rem   ;
+    }
+    .inquiry-section .title h2{
+        text-align: center;
+        color: black;
+    }
+    .inquiry-section label{
+        font-size: 2.5rem;
+    }
+
+    .inquiry-section input{
+        height: 4.5rem;
+    }
+    .nav-item a{
+        font-size: 2.5rem;
+    }
 }
 
-.navbar{
-	background-color: #6194fd;
+@media (min-width: 1024px) {
+    footer{
+        background-color: #6194fd;
+        min-height: 100px;
+        text-align: center;
+    }
+
+    .navbar{
+        background-color: #6194fd;
+    }
+    .inquiry-section{
+        margin: 20px 0;
+    }
+    .container-fluid{
+        min-height: 300px;
+        background-color: #ff665f;
+        padding: 15px 0;
+    }
+    .thankyou{
+        text-align: center;
+    }
+    .inquiry{
+        margin: 10px 0;
+    }
+    .label{
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    .form-row label{
+        font-size: 1.2rem   ;
+    }
+    .inquiry-section .title h2{
+        text-align: center;
+        color: black;
+    }
+    .nav-item a{
+        font-size: 1.5rem;
+    }
 }
-.inquiry-section{
-	margin: 20px 0;
-}
-.container-fluid{
-	min-height: 300px;
-	background-color: #ff665f;
-    padding: 15px 0;
-}
-.thankyou{
-	text-align: center;
-}
-.inquiry{
-	margin: 10px 0;
-}
-.label{
-	font-weight: bold;
-	text-decoration: underline;
-}
-.form-row label{
-    font-size: 1.2rem   ;
-}
-.inquiry-section .title h2{
-    text-align: center;
-    color: black;
-}
+
 
