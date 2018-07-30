@@ -32,11 +32,11 @@ public class InquiryController {
     public ModelAndView getAllInquiries(@RequestParam("pageSize") Optional<Integer> pageSize,
                                  @RequestParam("page") Optional<Integer> page){
 
-        if(inquiryRepository.count()!=0){
-            ;//pass
-        }else{
-            generateDummyEnquiries();
-        }
+//        if(inquiryRepository.count()!=0){
+//            ;//pass
+//        }else{
+//            generateDummyEnquiries();
+//        }
 
         ModelAndView modelAndView = new ModelAndView("inquiries");
         //
