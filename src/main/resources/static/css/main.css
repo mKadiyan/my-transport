@@ -16,6 +16,7 @@ h2{
 
     .navbar{
         background-color: #6194fd;
+
     }
     .inquiry-section{
         margin: 20px 0;
@@ -49,6 +50,10 @@ h2{
     .inquiry-section input{
         height: 4.5rem;
     }
+    .nav-item{
+        padding-left: 10px;
+        padding-right: 10px
+    }
     .nav-item a{
         font-size: 2.5rem;
     }
@@ -60,7 +65,10 @@ h2{
         min-height: 100px;
         text-align: center;
     }
-
+    .nav-item{
+        padding-left: 10px;
+        padding-right: 10px
+    }
     .navbar{
         background-color: #6194fd;
     }
